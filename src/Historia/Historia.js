@@ -1,25 +1,25 @@
-
-import '../Home/Home.css';
+import './Historia.css';
 import { Footer } from '../shared/Footer/Footer';
 export function Historia(){
 
     return(
         <>
         <section>
-            <div class="banner">
+            <div class="banner2">
             </div>
         </section>
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-8">
-                        <h2>Arctic Monkeys</h2>
-                        <p> Arctic Monkeys es una banda británica de rock, formada en Sheffield, Reino Unido.3​ El grupo está compuesto por el guitarrista principal y vocalista Alex Turner, el guitarrista Jamie Cook, el baterista Matt Helders y el bajista Nick O'Malley. El bajista original de la banda, Andy Nicholson, dejó el proyecto en 2006 poco después del lanzamiento del álbum debut.<br></br>Los Arctic Monkeys fueron considerados como una de las primeras bandas en hacerse conocidas al público gracias a la difusión de sus canciones por Internet, por lo cual se los catalogó como «la banda que pudo haber cambiado el mercado de la música».4​ Esto le valió para que su álbum de estudio debut, Whatever People Say I Am, That's What I'm Not (2006), se convierta en el disco debut británico más vendido en la historia, con más de 300 mil copias vendidas en su primera semana en el mercado.5​ Ganó el premio al Mejor Álbum Británico en los Brit Awards 2007. El segundo álbum de la banda, Favourite Worst Nightmare (2007), contó casi con el mismo éxito, ganando también el premio al Mejor Álbum Británico en los Brit Awards 2008. Luego pasarían a sacar Humbug (2009), un proyecto más experimental, y Suck It and See (2011).
+                    <div class="col-12">
+                        <h1 class="text-uppercase my-3 text-center text-decoration-underline">Arctic Monkeys</h1>
+                        <p class="justificar"> La historia de Arctic Monkeys comienza como la de cualquiera de los que alguna vez nos interesamos por la música. En 2001, los vecinos Alex Turner y Matt Helders pidieron algún instrumento musical como regalo de Navidad. Al poco tiempo formaron su banda con compañeros del colegio y comenzaron a escribir canciones acerca de su Sheffield natal, principalmente. En 2003 empezaron a grabar algunos demos que los fans comenzaron a ripear en sus ordenadores y a compartirlo entre ellos. Al grupo no le importó, diciendo que "no hacían los demos para hacer dinero ni nada". Y así es como comenzaron a ganar popularidad en el norte de Inglaterra. En mayo de 2005, editan su primer EP Five Minutes With Arctic Monkeys, el cual contenía las canciones "Fake Tales Of San Francisco" y "From The Ritz To The Rubble". Al poco tiempo ya estaban tocando en festivales como el de Reading o el Leeds con mayor concurrencia en cada presentación. <br/><br/>
+                        Bajo el sello Domino Records, el mismo de artistas como Franz Ferdinand o Hot Chip, la banda edita su primer LP, Whatever People Say I Am, That's What I'm Not, que se convierte rápidamente en el álbum debut con las ventas más rápidas en la historia de la música británica, vendiendo 363.731 copias en su primera semana. Un disco plagado de éxitos, con canciones como "I Bet That You Look Good On The Dancefloor" o "When The Sun Goes Down". Canciones fuertes y directas que describían a su ciudad natal y su entorno. Rolling Stone lo describiría como "Una oleada de riffs que aumenta con la exposición repetida", mientras que NME diría que "En esencia se trata de un despojado disco de punk rock, pero cubierto con el toque de la gran música británica". Una extensa gira provocó la salida del bajista Andy Nicholson y la incorporación de Nick O'Malley en su reemplazo.
                         </p>
-                        <img src="https://firebasestorage.googleapis.com/v0/b/spotifyang-a7d3b.appspot.com/o/concierto.jpg?alt=media&token=9854152a-ed5d-44c8-8ca5-3e50bd6fa148" class="img-fluid w-100"></img>
+                        <img src="https://firebasestorage.googleapis.com/v0/b/spotifyang-a7d3b.appspot.com/o/historia.jpg?alt=media&token=d4540282-37a8-4ece-8c59-02551c2b6e40" class="mb-4 img-fluid w-100"></img>
                     </div>
-                    </div>
-                    </div>
+                </div>
+            </div>
         </section>
         <Footer/>
         </>

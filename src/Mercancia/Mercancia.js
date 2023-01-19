@@ -1,6 +1,19 @@
-import { Footer } from "../shared/Footer/Footer";
+import { Footer } from "../shared/Footer/Footer"
+import { useNavigate } from 'react-router-dom'
 
 export function Mercancia(){
+
+    //activamos la navegacion entre componentes cuando se de un evento
+    let navegante=useNavigate()
+
+    //lo que hace cuando detecta el evento
+    function detectarEvento(productoSeleccionado){
+        navegante('/tienda',{
+            state:{productoSeleccionado}
+        }
+        )
+    }
+
     let titulo="Productos Arctic Monkeys"
     let productos=[
         {
@@ -37,7 +50,7 @@ export function Mercancia(){
     ];
     return(
         <>
-            <h1 class="text center mb-4">{titulo}</h1>
+            <h1 class="my-4 text-center text-uppercase text-decoration-underline">{titulo}</h1>
             <div class="container mb-5">
                 <div class="row row-cols-1 row-cols-md-3 g-5"> 
                     {
@@ -46,9 +59,14 @@ export function Mercancia(){
                                 <>
                                 <div class="col">
                                     <div class="card h-100 shadow text-center">
-                                        <h2>{producto.nombre}</h2>
+                                        {/* <h2>{producto.nombre}</h2> */}
                                         <img class="img-fluid w-100 h-100" src={producto.foto} alt="foto" />
-                                        <h4>Precio: ${producto.precio} USD</h4>
+                                        <button className='btn btn-primary mx-5 my-3' onClick={
+                                            function(){
+                                                detectarEvento(producto)
+                                            }
+                                        } >Ampliar informacion</button>
+                                        {/* <h4>Precio: ${producto.precio} USD</h4> */}
                                     </div>
                                 </div>
                                 </>

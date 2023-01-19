@@ -1,0 +1,11 @@
+.banner2{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/spotifyang-a7d3b.appspot.com/o/banner2.jpg?alt=media&token=448c43cd-1b49-4274-8155-767ee53776b2");
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30%; 
+}
+
+.justificar{
+    text-align: justify;
+}

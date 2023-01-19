@@ -1,9 +1,6 @@
-.espacio{
- /* display: flex;
- justify-content: center;
- align-items: center; */
-}
-
 .imagen{
-    height:70%;
+    height:80%;
+}
+.justify{
+    text-align: justify;
 }

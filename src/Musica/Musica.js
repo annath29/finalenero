@@ -29,7 +29,7 @@ export function Musica(){
     }else{
         return(
             <>
-               <h2>Canciones de la banda: </h2>
+               <h1 class="my-4 text-center text-uppercase text-decoration-underline">Canciones top 10 de la banda: </h1>
                {
                 <>
                 <div className="container">
@@ -38,13 +38,10 @@ export function Musica(){
                             canciones.tracks.map(function(cancion){
                                 return(
                                     <div className="col">
-
-                                        <div className="card h-100 shadow">
-
-                                        <img src={cancion.album.images[0].url} ></img>
-                                        <h1 className="text-center">{cancion.name}</h1>
-                                        <audio controls src={cancion.preview_url}></audio> 
-
+                                        <div className="card h-100 shadow ">
+                                            <img src={cancion.album.images[0].url} ></img>
+                                            <h1 className="text-center">{cancion.name}</h1>
+                                            <audio className="d-block mx-auto my-3" controls src={cancion.preview_url}></audio> 
                                         </div>
                                     </div>
                                 )
